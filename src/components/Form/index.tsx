@@ -2,7 +2,7 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import api from "../../services/api";
-import { Container, FormContainer, FormStyle } from "./styles";
+import { FormContainer, FormStyle } from "./styles";
 
 export interface IFormInput {
 	amount: number;
