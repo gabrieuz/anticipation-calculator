@@ -1,7 +1,8 @@
 import { Container } from './styles';
 
 export interface IResult {
-	result: {
+    result: {
+        [key: string]: number;
 		1: number;
 		15: number;
 		30: number;
@@ -12,14 +13,15 @@ export interface IResult {
 export default function Result({ result }: IResult) {
     
     return (
-        <Container>
-
-            <h1>Você receberá</h1>
-            <span>Amanhã: <h3>R$ {result[1]}</h3></span>
-            <span>Em 15 dias: <h3>R$ {result[15]}</h3></span>
-            <span>Em 30 dias: <h3>R$ {result[30]}</h3></span>
-            <span>Em 90 dias: <h3>R$ {result[90]}</h3></span>
-
-        </Container>
-    );
+		<Container>
+			<h1>Você receberá</h1>
+			{Object.keys(result).map((key) => (
+				<span key={key}>
+					<span>{key === "1" ? "Amanhã" : key + " dias"}</span>
+					<h3>R$ {result[key]}</h3>
+				</span>
+            ))}
+            
+		</Container>
+	);
 }

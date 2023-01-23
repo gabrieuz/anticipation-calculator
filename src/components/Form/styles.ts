@@ -30,6 +30,10 @@ export const FormStyle = styled.form`
 			border: 1px solid #00a8ff;
 			outline: none;
 		}
+
+		&::placeholder {
+			color: #bebebe;
+		}
 	}
 
 	label {
