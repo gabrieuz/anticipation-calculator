@@ -1,6 +1,6 @@
 # Anticipation Calculator
 
-This project is a simple form that calculates how much you will receive in the future based on the input amount, number of installments, and MDR (Merchant Discount Rate). The form returns the calculated amount in Brazilian Reais (R$) for tomorrow, in 15 days, in 30 days and in 90 days.
+This project is a simple form that calculates how much you will receive in the future based on the input amount, number of installments, and MDR (Merchant Discount Rate). The form returns the calculated amount in Brazilian Reais (R$) for tomorrow, in 15 days, in 30 days and in 90 days or in a customized period.
 
 ## Technology Stack
 - Vite
